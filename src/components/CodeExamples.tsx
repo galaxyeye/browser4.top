@@ -15,7 +15,7 @@ export default function CodeExamples() {
     const examples = [
         {
             title: 'Browser Agents',
-            description: '自主推理、规划并完成复杂的浏览器任务',
+            description: 'Autonomous reasoning, planning, and execution for complex browser tasks',
             language: 'kotlin',
             code: `val agent = AgenticContexts.getOrCreateAgent()
 
@@ -31,20 +31,20 @@ agent.run(task)`,
         },
         {
             title: 'Workflow Automation',
-            description: '精确的元素交互与快速数据提取',
+            description: 'Precision element interaction and rapid data extraction',
             language: 'kotlin',
             code: `val session = AgenticContexts.getOrCreateSession()
 val driver = session.getOrCreateBoundDriver()
 
-// 打开并解析页面
+// Open and parse the page
 var page = session.open(url)
 var document = session.parse(page)
 
-// 与页面交互
+// Interact with the page
 var result = agent.act("scroll to the comment section")
 var content = driver.selectFirstTextOrNull("#comments")
 
-// 复杂的agent任务
+// Complex agent task
 var history = agent.run(
     "Search for 'smart phone', read the first four products"
 )`,
@@ -52,7 +52,7 @@ var history = agent.run(
         },
         {
             title: 'LLM + X-SQL',
-            description: '结合LLM智能和精确选择器的高效数据提取',
+            description: 'Efficient data extraction powered by LLM intelligence plus selectors',
             language: 'kotlin',
             code: `val sql = """
 select
@@ -73,7 +73,7 @@ println(ResultSetFormatter(rs, withHeader = true))`,
         },
         {
             title: 'High-Speed Parallel Processing',
-            description: '单机每天处理10万+页面的并行浏览器控制',
+            description: 'Parallel browser control that handles 100k+ pages per node per day',
             language: 'kotlin',
             code: `val args = "-refresh -dropContent -interactLevel fastest"
 val blockingUrls = listOf("*.png", "*.jpg")
@@ -106,13 +106,13 @@ session.submitAll(links)`,
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-sky-500/10 border border-sky-500/20 rounded-full mb-6">
                         <Code className="w-4 h-4 text-sky-400" />
-                        <span className="text-sky-400 text-sm font-medium">代码示例</span>
+                        <span className="text-sky-400 text-sm font-medium">Code Examples</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        开发者友好的API
+                        Developer-Friendly APIs
                     </h2>
                     <p className="text-xl text-slate-400">
-                        简洁优雅的代码示例，快速上手Browser4
+                        Elegant snippets that help you start fast with Browser4
                     </p>
                 </div>
 
@@ -142,7 +142,7 @@ session.submitAll(links)`,
                                                 className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-800 text-slate-400 hover:border-slate-600 hover:text-sky-400"
                                             >
                                                 {copiedIndex === index ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                                                <span>{copiedIndex === index ? '已复制' : '复制'}</span>
+                                                <span>{copiedIndex === index ? 'Copied' : 'Copy'}</span>
                                             </button>
                                         </div>
                                         <div className="relative flex-1 bg-slate-950 rounded-2xl p-5 border border-slate-900 shadow-inner">
@@ -173,10 +173,10 @@ session.submitAll(links)`,
                             </div>
                             <div className="p-6">
                                 <p className="text-sm text-slate-500 mb-1">YouTube Demo</p>
-                                <h3 className="text-xl font-semibold text-white mb-2">Browser4 Agents 实战</h3>
-                                <p className="text-slate-400 text-sm mb-4">展示自动研究、数据提取和报告生成的完整流程。</p>
+                                <h3 className="text-xl font-semibold text-white mb-2">Browser4 Agents in Action</h3>
+                                <p className="text-slate-400 text-sm mb-4">Full workflow covering automated research, extraction, and reporting.</p>
                                 <a href="https://www.youtube.com/watch?v=_BcryqWzVMI" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sky-400">
-                                    <span>查看视频</span>
+                                    <span>Watch the video</span>
                                     <Play className="w-4 h-4" />
                                 </a>
                             </div>
@@ -189,7 +189,7 @@ session.submitAll(links)`,
                                         <div className="w-16 h-16 rounded-full bg-sky-500 flex items-center justify-center mx-auto mb-4">
                                             <Play className="w-6 h-6 text-white ml-1" />
                                         </div>
-                                        <p className="text-white font-medium">哔哩哔哩演示</p>
+                                        <p className="text-white font-medium">Bilibili Demo</p>
                                     </div>
                                 </div>
                                 <a href="https://www.bilibili.com/video/BV1kM2rYrEFC" target="_blank" rel="noopener noreferrer" className="absolute inset-0">
@@ -198,10 +198,10 @@ session.submitAll(links)`,
                             </div>
                             <div className="p-6">
                                 <p className="text-sm text-slate-500 mb-1">Bilibili Demo</p>
-                                <h3 className="text-xl font-semibold text-white mb-2">中文深度讲解</h3>
-                                <p className="text-slate-400 text-sm mb-4">面向华语开发者的详细演示，覆盖部署、运行与实战。</p>
+                                <h3 className="text-xl font-semibold text-white mb-2">In-depth Chinese Walkthrough</h3>
+                                <p className="text-slate-400 text-sm mb-4">Detailed session for Mandarin developers covering deployment, runtime, and real usage.</p>
                                 <a href="https://www.bilibili.com/video/BV1kM2rYrEFC" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sky-400">
-                                    <span>去观看</span>
+                                    <span>Watch now</span>
                                     <Play className="w-4 h-4" />
                                 </a>
                             </div>
@@ -210,10 +210,10 @@ session.submitAll(links)`,
 
                     <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_320px] items-center">
                         <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-8">
-                            <p className="text-sm text-slate-500 uppercase tracking-[0.3em] mb-3">快速开始</p>
-                            <h3 className="text-3xl font-bold text-white mb-4">10 分钟完成环境部署</h3>
+                            <p className="text-sm text-slate-500 uppercase tracking-[0.3em] mb-3">Quickstart</p>
+                            <h3 className="text-3xl font-bold text-white mb-4">Set up in 10 minutes</h3>
                             <p className="text-slate-400 leading-relaxed mb-6">
-                                Browser4 需要 Java 17+ 与 Maven。克隆仓库、配置 LLM API 后即可运行示例。
+                                Browser4 requires Java 17+ and Maven. Clone the repo, configure your LLM API, and run the examples.
                             </p>
                             <div className="bg-slate-950 border border-slate-900 rounded-2xl p-4 font-mono text-sm text-slate-200 space-y-2 overflow-x-auto">
                                 <div>git clone https://github.com/platonai/browser4.git</div>
@@ -225,15 +225,15 @@ session.submitAll(links)`,
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-sky-500 hover:bg-sky-400 text-white rounded-xl"
                             >
-                                访问 GitHub
+                                Visit GitHub
                             </a>
                         </div>
 
                         <div className="bg-gradient-to-br from-sky-500/10 via-violet-500/10 to-emerald-500/10 border border-sky-500/20 rounded-3xl p-8 text-center">
                             <Code className="w-10 h-10 text-sky-400 mx-auto mb-4" />
-                            <p className="text-white text-xl font-semibold mb-2">开发者工具箱</p>
+                            <p className="text-white text-xl font-semibold mb-2">Developer Toolbox</p>
                             <p className="text-slate-300 text-sm leading-relaxed">
-                                IDE 模板、脚本片段与 CLI 助手即将发布，申请内测获取第一波体验。
+                                IDE templates, scripts, and CLI helpers are on the way—apply for the beta to get first access.
                             </p>
                         </div>
                     </div>

@@ -15,9 +15,9 @@ export default function Hero() {
     const [verbIndex, setVerbIndex] = useState(0);
     const [adjectiveIndex, setAdjectiveIndex] = useState(() => Math.floor(Math.random() * ADJECTIVE_TOKENS.length));
     const milestones = [
-        { label: '始于2014年', detail: '深耕浏览器自动化与智能体' },
-        { label: '进化2020+', detail: '大规模AI Agent生产化' },
-        { label: '面向未来', detail: '全面拥抱万物数字孪生' }
+        { label: 'Founded in 2014', detail: 'Dedicated to browser automation and agents' },
+        { label: 'Evolving 2020+', detail: 'Operationalizing large-scale AI agents' },
+        { label: 'Future ready', detail: 'Embracing digital twins of everything' }
     ];
 
     useEffect(() => {
@@ -63,7 +63,7 @@ export default function Hero() {
             <div className="relative max-w-5xl mx-auto px-6 py-28 text-center">
                 <div className="inline-flex items-center justify-center gap-2 px-5 py-2 bg-sky-500/10 border border-sky-500/20 rounded-full mb-8">
                     <Bot className="w-4 h-4 text-sky-400" />
-                    <span className="text-sky-400 text-sm font-medium">超高速浏览器与智能体时代的基础设施</span>
+                    <span className="text-sky-400 text-sm font-medium">Infrastructure for the ultra-fast browser + agent era</span>
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-[0_10px_35px_rgba(45,212,191,0.15)]">
@@ -99,7 +99,7 @@ export default function Hero() {
 
                 <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 backdrop-blur">
                     <p className="text-slate-500 text-xs tracking-[0.3em] uppercase mb-4">
-                        发展历程
+                        Milestones
                     </p>
                     <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-center md:gap-12">
                         {milestones.map((item) => (

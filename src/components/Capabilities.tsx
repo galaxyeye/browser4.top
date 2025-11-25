@@ -41,12 +41,12 @@ const pillars = [
         icon: BrainCircuit,
         accent: 'sky',
         tag: 'AI & Agents',
-        title: '自主型浏览器智能体',
-        summary: '以主动感知、推理与多Agent编排为核心，实时理解页面状态并自我修正。',
-        bullets: ['链式推理 + 场景规划', 'LLM/视觉混合上下文', '多Agent协同'],
+        title: 'Autonomous Browser Agents',
+        summary: 'Real-time perception, reasoning, and multi-agent orchestration keep the agent on course.',
+        bullets: ['Chain-of-thought planning', 'LLM + vision mixed context', 'Multi-agent collaboration'],
         stat: '100+',
-        statLabel: '单机并发 Agent',
-        footnote: '核心价值：让AI具备自洽的决策与执行力',
+        statLabel: 'Concurrent agents per node',
+        footnote: 'Core value: end-to-end reasoning plus reliable execution loops',
         language: 'kotlin',
         code: `val agent = AgenticContexts.getOrCreateAgent()
 
@@ -63,25 +63,25 @@ agent.run(task)`
         icon: Workflow,
         accent: 'emerald',
         tag: 'Automation & RPA',
-        title: '高精度工作流自动化',
-        summary: '可组合的工作流原语、协程级别的动作安全，以及复杂事件的弹性恢复。',
-        bullets: ['工作流/步骤可视化编排', '毫秒级协程动作控制', '事件驱动的容错恢复'],
+        title: 'High-Precision Workflow Automation',
+        summary: 'Composable primitives, coroutine-level safety, and elastic recovery for long-running work.',
+        bullets: ['Visual workflow orchestration', 'Millisecond coroutine controls', 'Event-driven resilience'],
         stat: '99.2%',
-        statLabel: '成功率',
-        footnote: '优势：长时间运行的业务自动化依旧稳定',
+        statLabel: 'Completion rate',
+        footnote: 'Strength: always-on automation with graceful recovery',
         language: 'kotlin',
         code: `val session = AgenticContexts.getOrCreateSession()
 val driver = session.getOrCreateBoundDriver()
 
-// 打开并解析页面
+// Open and parse the page
 var page = session.open(url)
 var document = session.parse(page)
 
-// 与页面交互
+// Interact with the page
 var result = agent.act("scroll to the comment section")
 var content = driver.selectFirstTextOrNull("#comments")
 
-// 复杂的agent任务
+// Complex agent task
 var history = agent.run(
     "Search for 'smart phone', read the first four products"
 )`
@@ -90,12 +90,12 @@ var history = agent.run(
         icon: Database,
         accent: 'violet',
         tag: 'Data Extraction',
-        title: '一句话完成规模化提取',
-        summary: 'LLM + ML + selector 的混合策略，跨复杂网页快速输出干净数据。',
-        bullets: ['零 Token 机器学习提取', 'X-SQL 扩展查询', '大规模实体抽取'],
+        title: 'One-Command Scale Extraction',
+        summary: 'Hybrid of LLM, ML, and selectors for clean data across chaotic pages.',
+        bullets: ['Token-free ML extraction', 'X-SQL extended queries', 'Mass entity harvesting'],
         stat: '99.9%+',
-        statLabel: '字段准确率',
-        footnote: '无需手写繁琐规则，自动适配站点结构',
+        statLabel: 'Field accuracy',
+        footnote: 'No brittle rules—auto adapts to each site',
         language: 'kotlin',
         code: `val sql = """
 select
@@ -117,12 +117,12 @@ println(ResultSetFormatter(rs, withHeader = true))`
         icon: Shield,
         accent: 'amber',
         tag: 'Performance & Reliability',
-        title: '规模化与高级反检测',
-        summary: '多层防护、行为模拟与弹性调度，让十万级页面处理保持高可用。',
-        bullets: ['单机十万页/天渲染', '智能抗封锁与重试', 'Profile/IP/行为多维防护'],
-        stat: '10万+',
-        statLabel: '日处理页面',
-        footnote: '指标：吞吐与反检测双保障',
+        title: 'Scale + Anti-Detection',
+        summary: 'Behavioral simulation, multi-layer defense, and elastic scheduling keep throughput high.',
+        bullets: ['100k page renders per node/day', 'Smart anti-block + retries', 'Profile/IP/behavior shields'],
+        stat: '100k+',
+        statLabel: 'Pages per day',
+        footnote: 'Throughput and anti-detection guaranteed together',
         language: 'kotlin',
         code: `val args = "-refresh -dropContent -interactLevel fastest"
 val blockingUrls = listOf("*.png", "*.jpg")
@@ -159,7 +159,7 @@ export default function Capabilities() {
                 <div className="text-center mb-16">
                     <p className="text-sm tracking-[0.5em] text-slate-500 uppercase mb-4">browser4 stack</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        四大能力矩阵
+                        Four Capability Pillars
                     </h2>
                     <p className="text-xl text-slate-400">
                         Agents · Automation · Data · Reliability
@@ -239,7 +239,7 @@ export default function Capabilities() {
                                     copied ? 'border-sky-500/50 text-sky-300' : 'border-slate-800'
                                 }`}
                             >
-                                {copied ? '已复制' : '复制代码'}
+                                {copied ? 'Copied' : 'Copy code'}
                             </button>
                         </div>
 

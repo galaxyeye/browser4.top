@@ -1,15 +1,15 @@
 import { Rocket, Store, List, Globe } from 'lucide-react';
 
 const highlights = [
-    { label: '生态现状痛点', bullets: ['缺乏统一应用商店与可发现渠道', '缺少可搜索目录，难以匹配需求', '发布与分发生态割裂、无标准'] },
-    { label: 'Agent 能力现状', bullets: ['大模型实时生成动作', '视觉网络 Agent 像人类一样浏览', 'OS 级 Agent 接管复杂交互'] }
+    { label: 'Current ecosystem pain points', bullets: ['No unified app store or discovery channels', 'Lack of searchable directories to match needs', 'Fragmented publishing + distribution with no standards'] },
+    { label: 'Agent capability snapshot', bullets: ['LLMs generate actions in real time', 'Vision agents browse like humans', 'OS-level agents take over complex flows'] }
 ];
 
 const predictions = [
-    { icon: Store, title: 'Agent Hub', text: '统一的 Agent 应用商店，支持分类、搜索、评分与版本管理', accent: 'sky' },
-    { icon: List, title: '分类市场', text: '按数据采集/自动化/分析等场景划分，建立透明质量体系', accent: 'violet' },
-    { icon: Rocket, title: '预构建目录', text: '预置订机票、费用管理、竞品监控等 Agent 套件，开箱即用', accent: 'emerald' },
-    { icon: Globe, title: '协同进化', text: '网站主动适配 Agent 访问，提供更友好的数据接口与交互', accent: 'amber' }
+    { icon: Store, title: 'Agent Hub', text: 'Unified agent marketplace with categories, search, ratings, and versioning', accent: 'sky' },
+    { icon: List, title: 'Segmented Markets', text: 'Scenario-based catalogs (data collection, automation, analytics) with transparent quality bars', accent: 'violet' },
+    { icon: Rocket, title: 'Prebuilt Catalog', text: 'Prepackaged agents for booking, expense management, competitive monitoring—ready out of the box', accent: 'emerald' },
+    { icon: Globe, title: 'Co-evolution', text: 'Websites proactively support agents with friendlier data surfaces and interactions', accent: 'amber' }
 ];
 
 const accentMap = {
@@ -26,8 +26,8 @@ export default function Vision() {
             <div className="relative max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <p className="text-sm tracking-[0.5em] text-slate-500 uppercase mb-4">vision 2030</p>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">未来愿景</h2>
-                    <p className="text-xl text-slate-400">构建对所有参与方公平、可持续的智能体生态系统</p>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Future Vision</h2>
+                    <p className="text-xl text-slate-400">Build a fair, sustainable ecosystem for every agent participant</p>
                 </div>
 
                 <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] mb-16">
@@ -48,7 +48,7 @@ export default function Vision() {
                     </div>
 
                     <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-8">
-                        <p className="text-sm text-slate-500 uppercase tracking-[0.3em] mb-4">三年路线图</p>
+                        <p className="text-sm text-slate-500 uppercase tracking-[0.3em] mb-4">Three-year roadmap</p>
                         <div className="space-y-8">
                             {predictions.map((item) => (
                                 <div key={item.title} className={`rounded-2xl border ${accentMap[item.accent as keyof typeof accentMap]} bg-slate-950/40 p-6`}>
@@ -64,27 +64,26 @@ export default function Vision() {
                 </div>
 
                 <div className="bg-gradient-to-br from-sky-500/10 via-violet-500/10 to-emerald-500/10 border border-sky-500/30 rounded-3xl p-12 text-center">
-                    <h3 className="text-3xl font-bold text-white mb-4">Browser4 的使命</h3>
+                    <h3 className="text-3xl font-bold text-white mb-4">Browser4 Mission</h3>
                     <p className="text-xl text-slate-300 mb-6 leading-relaxed max-w-4xl mx-auto">
-                        智能体时代已经开启。Browser4 正在构建一个对所有参与方公平、可持续的智能体生态系统，
-                        让 AI 具备自主决策与执行能力，推动互联网向智能体互联网演进。
+                        The agent era is already here. Browser4 is building a fair, sustainable ecosystem where AI can make autonomous decisions and act reliably, accelerating the shift toward an agentic internet.
                     </p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-left md:text-center">
                         <div>
                             <p className="text-4xl font-bold text-white">180+</p>
-                            <p className="text-sm text-slate-400">已接入的企业场景</p>
+                            <p className="text-sm text-slate-400">Enterprise scenarios already connected</p>
                         </div>
                         <div>
                             <p className="text-4xl font-bold text-white">800+</p>
-                            <p className="text-sm text-slate-400">在训 Agent 模块</p>
+                            <p className="text-sm text-slate-400">Agent modules in training</p>
                         </div>
                         <div>
                             <p className="text-4xl font-bold text-white">24/7</p>
-                            <p className="text-sm text-slate-400">实时运行与监测</p>
+                            <p className="text-sm text-slate-400">Always-on execution and monitoring</p>
                         </div>
                     </div>
                     <div className="inline-block mt-10 px-10 py-4 bg-gradient-to-r from-sky-500 to-violet-500 rounded-xl text-white font-bold text-lg">
-                        让我们一起构建未来
+                        Let's build the future together
                     </div>
                 </div>
             </div>
