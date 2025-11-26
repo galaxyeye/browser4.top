@@ -24,15 +24,6 @@ export default function Features() {
             color: 'from-violet-400 to-purple-500'
         },
         {
-            icon: Gauge,
-            title: 'Extreme Performance',
-            subtitle: 'Extreme performance',
-            description: 'Coroutine-safe engine; 100k+ complex pages per machine per day',
-            color: 'from-amber-400 to-orange-500',
-            stat: '100k+',
-            statLabel: 'Pages per day'
-        },
-        {
             icon: Globe,
             title: 'Web Understanding',
             subtitle: 'Deep web understanding',
@@ -40,6 +31,15 @@ export default function Features() {
             color: 'from-pink-400 to-rose-500',
             stat: '99%+',
             statLabel: 'Structured accuracy'
+        },
+        {
+            icon: Gauge,
+            title: 'Extreme Performance',
+            subtitle: 'Extreme performance',
+            description: 'Coroutine-safe engine; 100k+ complex pages per machine per day',
+            color: 'from-amber-400 to-orange-500',
+            stat: '100k+',
+            statLabel: 'Pages per day'
         }
     ];
 
