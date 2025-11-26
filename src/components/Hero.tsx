@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Bot } from 'lucide-react';
 
-const VERB_TOKENS = ['browse', 'automate', 'study', 'scrape', 'study', 'browse', 'monitor',
-    'crawl', 'automate', 'extract', 'browse', 'automate', 'study'];
+const VERB_TOKENS = ['browse', 'automate', 'observe', 'scrape', 'study', 'investigate', 'extract', 'browse', 'monitor',
+    'crawl', 'automate', 'extract', 'browse', 'automate', 'study', 'understand', 'investigate'];
 const VERB_SLOT_WIDTH_CH = Math.max(...VERB_TOKENS.map((token) => token.length));
 const VERB_TEMPO_WAVE_MS = [
     520, 360, 220, 160, 140, 180, 260, 420, 640, 420, 260, 180,

@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useContext, useEffect, useMemo, useState } from 'react';
 
-type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark';
 
 type ThemeContextValue = {
     theme: Theme;
@@ -86,4 +86,3 @@ export function useTheme() {
     }
     return context;
 }
-
