@@ -44,7 +44,7 @@ const cases = [
         icon: Search,
         number: '01',
         title: 'Automated Research & Massive Data Collection',
-        description: 'Agents auto-search across platforms, pull prices, and monitor changes. A single Browser4 node can visit 100k pages per day and structure data with built-in ML, boosting research efficiency by thousands of times.',
+        description: 'Agents auto-search across platforms, pull prices, and monitor changes. A single Browser4 node can visit 100k ~ 200k pages per day and structure data with built-in ML, boosting research efficiency by thousands of times.',
         example: 'An e-commerce team collects hundreds of thousands of product records daily and auto-builds reports to guide merchandising.',
         color: 'sky'
     },
