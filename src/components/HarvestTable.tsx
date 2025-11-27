@@ -16,11 +16,9 @@ export function HarvestTable({ rows }: HarvestTableProps) {
                             <th className="py-1 pr-3">#</th>
                             <th className="py-1 pr-3">URL</th>
                             <th className="py-1 pr-3">Title</th>
-                            <th className="py-1 pr-3">By</th>
                             <th className="py-1 pr-3">Brand</th>
                             <th className="py-1 pr-3">Stars</th>
                             <th className="py-1 pr-3">Ratings</th>
-                            <th className="py-1 pr-3">Divider</th>
                             <th className="py-1 pr-3">Q&A</th>
                             <th className="py-1 pr-3">Fees</th>
                             <th className="py-1 pr-3">Other Sellers</th>
@@ -44,11 +42,9 @@ export function HarvestTable({ rows }: HarvestTableProps) {
                                     </a>
                                 </td>
                                 <td className="py-1.5 px-3">{row.title}</td>
-                                <td className="py-1.5 px-3">{row.byLabel ?? ''}</td>
                                 <td className="py-1.5 px-3">{row.brand ?? ''}</td>
                                 <td className="py-1.5 px-3">{row.stars ?? ''}</td>
                                 <td className="py-1.5 px-3">{row.ratings ?? ''}</td>
-                                <td className="py-1.5 px-3">{row.divider ?? ''}</td>
                                 <td className="py-1.5 px-3">{row.questions ?? ''}</td>
                                 <td className="py-1.5 px-3">{row.fees ?? ''}</td>
                                 <td className="py-1.5 px-3">{row.otherSellers ?? ''}</td>

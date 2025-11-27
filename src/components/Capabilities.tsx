@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { BrainCircuit, Workflow, Database, Shield } from 'lucide-react';
 import { useTheme } from '../theme/ThemeProvider';
 import { Highlight, type Language, themes } from 'prism-react-renderer';
@@ -197,6 +197,28 @@ export default function Capabilities() {
         setCopied(false);
     };
 
+    const harvestScrollRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!showHarvestTable) {
+            return;
+        }
+
+        const scroller = harvestScrollRef.current;
+        if (!scroller) {
+            return;
+        }
+
+        const frame = requestAnimationFrame(() => {
+            const maxScroll = scroller.scrollWidth - scroller.clientWidth;
+            if (maxScroll > 0) {
+                scroller.scrollLeft = maxScroll * 0.755;
+            }
+        });
+
+        return () => cancelAnimationFrame(frame);
+    }, [showHarvestTable, activeIndex, activeTabIndex]);
+
     return (
         <section id="capabilities" className="relative py-24 bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900 dark:from-slate-950 dark:via-slate-950/80 dark:to-slate-900 dark:text-white">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(129,140,248,0.15),transparent_60%)] dark:bg-[radial-gradient(circle_at_15%_20%,rgba(129,140,248,0.08),transparent_55%)]" />
@@ -337,8 +359,9 @@ export default function Capabilities() {
                             </div>
 
                             {showHarvestTable && (
-                                <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-sm p-2">
+                                <div className="border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 shadow-sm p-2">
                                     <div
+                                        ref={harvestScrollRef}
                                         className="overflow-x-auto overflow-y-hidden pb-1 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-slate-200/60 dark:[&::-webkit-scrollbar-track]:bg-slate-800/60 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-slate-400 dark:[&::-webkit-scrollbar-thumb]:bg-slate-600"
                                     >
                                         <div className="min-w-max">

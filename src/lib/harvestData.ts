@@ -187,7 +187,7 @@ export const harvestRows: HarvestRow[] = [
         urlText: 'Amazon.com: Power Pressure Cooker XL 10 Qt',
         title: 'Power Pressure Cooker XL 10 Qt',
         byLabel: 'by',
-        brand: 'Power Pressure Cooker XL',
+        brand: 'Power Pressure',
         stars: '4.1 out of 5 stars',
         ratings: '2,977 ratings',
         divider: '|',
