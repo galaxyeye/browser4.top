@@ -162,7 +162,7 @@ export default function UseCases() {
                             <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">Why Browser4</p>
                             <ul className="space-y-3 text-slate-600 dark:text-slate-300">
                                 <li>✦ Agents navigate, extract, and stitch data automatically</li>
-                                <li>✦ 100k pages/day per node with near-real-time monitoring</li>
+                                <li>✦ 100k ~ 200k pages/day per node with near-real-time monitoring</li>
                                 <li>✦ Full API + workflow tooling for systems integration</li>
                             </ul>
                         </div>
