@@ -36,7 +36,7 @@ export default function Features() {
             icon: Gauge,
             title: 'Extreme Performance',
             subtitle: 'Extreme performance',
-            description: 'Coroutine-safe engine; 100k+ complex pages per machine per day',
+            description: 'Coroutine-safe engine; 100k ~ 200k complex pages per machine per day',
             color: 'from-amber-400 to-orange-500',
             stat: '100k+',
             statLabel: 'Pages per day'

@@ -146,7 +146,7 @@ println(ResultSetFormatter(rs, withHeader = true))`
         tag: 'Performance & Reliability',
         title: 'Scale + Anti-Detection',
         summary: 'Behavioral simulation, multi-layer defense, and elastic scheduling keep throughput high.',
-        bullets: ['100k page renders per node/day', 'Smart anti-block + retries', 'Profile/IP/behavior shields'],
+        bullets: ['100k ~ 200k page renders per node/day', 'Smart anti-block + retries', 'Profile/IP/behavior shields'],
         stat: '100k+',
         statLabel: 'Pages per day',
         footnote: 'Throughput and anti-detection guaranteed together',

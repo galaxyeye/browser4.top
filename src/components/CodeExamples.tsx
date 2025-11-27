@@ -89,7 +89,7 @@ println(ResultSetFormatter(rs, withHeader = true))`,
         },
         {
             title: 'High-Speed Parallel Processing',
-            description: 'Parallel browser control that handles 100k+ pages per node per day',
+            description: 'Parallel browser control that handles 100k ~ 200k pages per node per day',
             language: 'kotlin',
             code: `val args = "-refresh -dropContent -interactLevel fastest"
 val blockingUrls = listOf("*.png", "*.jpg")
