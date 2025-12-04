@@ -78,7 +78,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="text-xl sm:text-2xl md:text-[26px] text-slate-600 dark:text-slate-300 mb-8 font-light max-w-3xl mx-auto">
-                    The ECOSYSTEM built around the world's most-<span className="text-sky-600 dark:text-sky-300" aria-live="polite">{ADJECTIVE_TOKENS[adjectiveIndex]}</span> browser-automation library.
+                    The Infrastructure & ECOSYSTEM built around the world's most-<span className="text-sky-600 dark:text-sky-300" aria-live="polite">{ADJECTIVE_TOKENS[adjectiveIndex]}</span> browser library.
                 </p>
 
                 <div className="flex flex-wrap justify-center items-center gap-4 mb-14">
