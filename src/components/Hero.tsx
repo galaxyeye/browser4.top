@@ -84,7 +84,6 @@ export default function Hero() {
                     </span>
                     {t('hero.title').split('{{verb}}').slice(1).join('')}
                 </h1>
-                </h1>
 
                 <p className="text-xl sm:text-2xl md:text-[26px] text-slate-600 dark:text-slate-300 mb-8 font-light max-w-3xl mx-auto">
                     {t('hero.subtitle').split('{{adjective}}')[0]}
