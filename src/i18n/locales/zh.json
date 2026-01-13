@@ -89,6 +89,10 @@
   "capabilities": {
     "title": "技术架构",
     "subtitle": "支撑下一代浏览器智能体的四大技术支柱",
+    "sectionTitle": "四大能力支柱",
+    "sectionSubtitle": "智能体 · 自动化 · 数据 · 可靠性",
+    "copyCode": "复制代码",
+    "copied": "已复制",
     "aiAgents": {
       "tag": "AI与智能体",
       "title": "自主浏览器智能体",
@@ -131,7 +135,65 @@
     },
     "demoTitle": "实时演示",
     "demoDescription": "实时查看Browser4采集真实数据",
-    "demoSummary": "汇总"
+    "demoSummary": "汇总",
+    "harvestTable": {
+      "number": "#",
+      "url": "链接",
+      "title": "标题",
+      "brand": "品牌",
+      "stars": "评分",
+      "ratings": "评价数",
+      "qa": "问答",
+      "fees": "费用",
+      "otherSellers": "其他卖家",
+      "price": "价格",
+      "notes": "备注"
+    },
+    "pillars": {
+      "aiAgents": {
+        "tag": "AI与智能体",
+        "title": "自主浏览器智能体",
+        "summary": "实时感知、推理和多智能体编排，保持智能体在正确轨道上。",
+        "bullet1": "思维链规划",
+        "bullet2": "LLM + 视觉混合上下文",
+        "bullet3": "多智能体协作",
+        "stat": "50+",
+        "statLabel": "单节点并发智能体数",
+        "footnote": "核心价值：端到端推理加可靠执行循环"
+      },
+      "workflow": {
+        "tag": "自动化与RPA",
+        "title": "高精度工作流自动化",
+        "summary": "可组合的原语、协程级安全性和弹性恢复，适用于长时间运行的工作。",
+        "bullet1": "毫秒级协程控制",
+        "bullet2": "事件驱动的恢复能力",
+        "stat": "99.2%",
+        "statLabel": "完成率",
+        "footnote": "优势：始终在线的自动化与优雅恢复"
+      },
+      "intelligence": {
+        "tag": "数据提取",
+        "title": "一键规模化提取",
+        "summary": "LLM、ML和选择器的混合，在混乱页面中获取干净数据。",
+        "bullet1": "无token ML提取",
+        "bullet2": "X-SQL扩展查询",
+        "bullet3": "批量实体采集",
+        "stat": "99.9%+",
+        "statLabel": "字段准确率",
+        "footnote": "无脆弱规则——自动适配每个网站"
+      },
+      "security": {
+        "tag": "性能与可靠性",
+        "title": "规模化 + 反检测",
+        "summary": "行为模拟、多层防御和弹性调度保持高吞吐量。",
+        "bullet1": "单节点每天渲染10万~20万页面",
+        "bullet2": "智能反封锁 + 重试",
+        "bullet3": "配置文件/IP/行为防护",
+        "stat": "10万+",
+        "statLabel": "每日页面数",
+        "footnote": "同时保证吞吐量和反检测"
+      }
+    }
   },
   "codeExamples": {
     "title": "快速集成",
