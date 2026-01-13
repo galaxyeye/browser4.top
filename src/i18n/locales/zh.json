@@ -254,6 +254,27 @@
       "title": "质量保证与测试",
       "description": "在类生产环境中运行端到端测试，模拟特定地理位置的用户，24/7监控关键路径。",
       "example": "支付、认证和跨境结账的自动化测试确保客户旅程安全。"
+    },
+    "videoDemos": {
+      "label": "视频演示",
+      "title": "Browser4实战演示",
+      "subtitle": "智能体采集数据和比较产品的真实视频。",
+      "video": "视频",
+      "watchOnYouTube": "在YouTube上观看",
+      "video1": {
+        "title": "Browser4演示 - 产品比较",
+        "description": "演示Browser4智能体如何搜索亚马逊、捕获产品规格并并排排列项目。",
+        "note1": "实时导航亚马逊结果页面",
+        "note2": "自动提取属性和比较亮点",
+        "note3": "非常适合商业和采购分析师"
+      },
+      "video2": {
+        "title": "Browser4：构建虚拟智能体大军",
+        "description": "展示PulsarAgents自动化网络数据提取和注释，团队可以立即导出到Excel、HTML或SQL。",
+        "note1": "提供列表页链接，然后爬取每个产品详情",
+        "note2": "零手动标记生成结构化表格",
+        "note3": "非常适合将混乱的网站转换为业务就绪的数据集"
+      }
     }
   },
   "vision": {
