@@ -89,6 +89,10 @@
   "capabilities": {
     "title": "Technical Architecture",
     "subtitle": "Four technical pillars for next-gen browser agents",
+    "sectionTitle": "Four Capability Pillars",
+    "sectionSubtitle": "Agents · Automation · Data · Reliability",
+    "copyCode": "Copy code",
+    "copied": "Copied",
     "aiAgents": {
       "tag": "AI & Agents",
       "title": "Autonomous Browser Agents",
@@ -131,7 +135,65 @@
     },
     "demoTitle": "Live Demo",
     "demoDescription": "See Browser4 harvest real data in real time",
-    "demoSummary": "Summary"
+    "demoSummary": "Summary",
+    "harvestTable": {
+      "number": "#",
+      "url": "URL",
+      "title": "Title",
+      "brand": "Brand",
+      "stars": "Stars",
+      "ratings": "Ratings",
+      "qa": "Q&A",
+      "fees": "Fees",
+      "otherSellers": "Other Sellers",
+      "price": "Price",
+      "notes": "Notes"
+    },
+    "pillars": {
+      "aiAgents": {
+        "tag": "AI & Agents",
+        "title": "Autonomous Browser Agents",
+        "summary": "Real-time perception, reasoning, and multi-agent orchestration keep the agent on course.",
+        "bullet1": "Chain-of-thought planning",
+        "bullet2": "LLM + vision mixed context",
+        "bullet3": "Multi-agent collaboration",
+        "stat": "50+",
+        "statLabel": "Concurrent agents per node",
+        "footnote": "Core value: end-to-end reasoning plus reliable execution loops"
+      },
+      "workflow": {
+        "tag": "Automation & RPA",
+        "title": "High-Precision Workflow Automation",
+        "summary": "Composable primitives, coroutine-level safety, and elastic recovery for long-running work.",
+        "bullet1": "Millisecond coroutine controls",
+        "bullet2": "Event-driven resilience",
+        "stat": "99.2%",
+        "statLabel": "Completion rate",
+        "footnote": "Strength: always-on automation with graceful recovery"
+      },
+      "intelligence": {
+        "tag": "Data Extraction",
+        "title": "One-Command Scale Extraction",
+        "summary": "Hybrid of LLM, ML, and selectors for clean data across chaotic pages.",
+        "bullet1": "Token-free ML extraction",
+        "bullet2": "X-SQL extended queries",
+        "bullet3": "Mass entity harvesting",
+        "stat": "99.9%+",
+        "statLabel": "Field accuracy",
+        "footnote": "No brittle rules—auto adapts to each site"
+      },
+      "security": {
+        "tag": "Performance & Reliability",
+        "title": "Scale + Anti-Detection",
+        "summary": "Behavioral simulation, multi-layer defense, and elastic scheduling keep throughput high.",
+        "bullet1": "100k ~ 200k page renders per node/day",
+        "bullet2": "Smart anti-block + retries",
+        "bullet3": "Profile/IP/behavior shields",
+        "stat": "100k+",
+        "statLabel": "Pages per day",
+        "footnote": "Throughput and anti-detection guaranteed together"
+      }
+    }
   },
   "codeExamples": {
     "title": "Fast Integration",
