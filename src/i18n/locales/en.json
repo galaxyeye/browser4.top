@@ -154,42 +154,44 @@
     }
   },
   "useCases": {
-    "title": "Real-World Use Cases",
-    "subtitle": "From research to enterprise automation—Browser4 handles it all",
+    "label": "real-world plays",
+    "title": "Use Cases",
+    "subtitle": "Typical Browser4 AI Agent deployments",
+    "whyBrowser4": "Why Browser4",
+    "scenario": "Scenario",
+    "example": "Example",
+    "benefit1": "Agents navigate, extract, and stitch data automatically",
+    "benefit2": "100k ~ 200k pages/day per node with near-real-time monitoring",
+    "benefit3": "Full API + workflow tooling for systems integration",
     "case1": {
       "number": "01",
       "title": "Automated Research & Massive Data Collection",
       "description": "Agents auto-search across platforms, pull prices, and monitor changes. A single Browser4 node can visit 100k ~ 200k pages per day and structure data with built-in ML, boosting research efficiency by thousands of times.",
-      "example": "An e-commerce team collects hundreds of thousands of product records daily and auto-builds reports to guide merchandising.",
-      "tag": "Data Collection"
+      "example": "An e-commerce team collects hundreds of thousands of product records daily and auto-builds reports to guide merchandising."
     },
     "case2": {
       "number": "02",
-      "title": "AI-Driven Agent Automation",
-      "description": "Let browser agents reason, plan, and execute tasks autonomously—from filling forms to multi-step workflows—freeing humans from repetitive clicks.",
-      "example": "A financial team uses agents to log in, navigate dashboards, export reports, and deliver results to Slack.",
-      "tag": "Agent Automation"
+      "title": "AI-Driven Interactive Experiences",
+      "description": "Pair LLMs with browser agents to read, summarize, and act on content. Agents reason across pages, compare insights, and behave like a 24/7 AI analyst.",
+      "example": "Many viral social videos showcase agents autonomously completing complex browsing, comparison, and synthesis tasks."
     },
     "case3": {
       "number": "03",
-      "title": "Integration with LLM Workflows",
-      "description": "Feed real-time web data into LLMs or RAG pipelines—agents retrieve context, screenshots, and structured results on demand.",
-      "example": "A customer-support bot fetches live docs and screenshots to answer user questions with up-to-date info.",
-      "tag": "LLM Integration"
+      "title": "Prospecting & Data Enrichment",
+      "description": "Crawl directories, event registries, and company sites to build or enrich CRM records and surface prospects fast.",
+      "example": "One customer gathers 30k leads daily from Google, merges multilingual sources automatically, and accelerates sales coverage."
     },
     "case4": {
       "number": "04",
-      "title": "Competitive Intelligence & Market Monitoring",
-      "description": "Continuously track competitor pricing, product launches, and reviews. Browser4 handles scale and complexity so you focus on insights.",
-      "example": "A retail brand monitors thousands of SKUs across e-commerce sites in real time and triggers alerts on price changes.",
-      "tag": "Monitoring"
+      "title": "Workflow Automation (WFA)",
+      "description": "Hands-off flows for login, invoice downloads, forms, uploads, and system-to-system sync.",
+      "example": "A finance team automates bank reconciliation with Browser4, saving dozens of hours monthly and driving error rates to zero."
     },
     "case5": {
       "number": "05",
-      "title": "QA & Testing at Scale",
-      "description": "Simulate user journeys across browsers and devices. Catch regressions before customers do.",
-      "example": "A SaaS company runs nightly tests across 50 scenarios, ensuring every release is regression-free.",
-      "tag": "Testing"
+      "title": "Quality Assurance & Testing",
+      "description": "Run E2E tests in production-like environments, simulate geo-specific users, and monitor critical paths 24/7.",
+      "example": "Automated tests for payments, auth, and cross-border checkout keep customer journeys safe."
     }
   },
   "vision": {
