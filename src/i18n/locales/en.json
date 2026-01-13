@@ -254,6 +254,27 @@
       "title": "Quality Assurance & Testing",
       "description": "Run E2E tests in production-like environments, simulate geo-specific users, and monitor critical paths 24/7.",
       "example": "Automated tests for payments, auth, and cross-border checkout keep customer journeys safe."
+    },
+    "videoDemos": {
+      "label": "video demos",
+      "title": "See Browser4 in Action",
+      "subtitle": "Real footage of agents collecting data and comparing products.",
+      "video": "Video",
+      "watchOnYouTube": "Watch on YouTube",
+      "video1": {
+        "title": "Browser4 demo - product comparison",
+        "description": "Demonstrates how Browser4 agents search Amazon, capture product specs, and stack-rank items side by side.",
+        "note1": "Live navigation across Amazon results pages",
+        "note2": "Automatic attribute extraction and comparison highlights",
+        "note3": "Great fit for commerce and sourcing analysts"
+      },
+      "video2": {
+        "title": "Browser4: Build an Army of Virtual Agents",
+        "description": "Shows PulsarAgents automating web data extraction and annotation so teams can export into Excel, HTML, or SQL instantly.",
+        "note1": "Provide a list page link, then crawl every product detail",
+        "note2": "Generate structured tables with zero manual tagging",
+        "note3": "Ideal for turning messy sites into business-ready datasets"
+      }
     }
   },
   "vision": {
